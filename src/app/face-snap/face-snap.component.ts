@@ -16,7 +16,7 @@ export class FaceSnapComponent implements OnInit{
 
     ngOnInit(): void {
          this.title = 'Archibald';
-         this.description = 'Mon meilleur ami depuis tojours !';
+         this.description = 'Mon meilleur ami depuis toujours !';
          this.createdAt = new Date()
          this.snaps = 5;
          this.imageUrl =

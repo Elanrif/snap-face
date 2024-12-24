@@ -1,5 +1,7 @@
-<h2>{{ title }}</h2>
-<p>Mis en ligne le {{ createdAt }}</p>
-<p>{{ this.description }}</p>
-<p>👌 {{ this.snaps }}</p>
-<img [src]="imageUrl" [alt]="title"/>
+<div class="face-snap-card">
+    <h2>{{ title }}</h2>
+    <p>Mis en ligne le {{ createdAt }}</p>
+    <img [src]="imageUrl" [alt]="title"/>
+    <p>👌 {{ snaps }}</p>
+    <p>{{ description }}</p>
+</div>
