@@ -2,6 +2,9 @@
     <h2>{{ title }}</h2>
     <p>Mis en ligne le {{ createdAt }}</p>
     <img [src]="imageUrl" [alt]="title"/>
-    <p>👌 {{ snaps }}</p>
+    <p>
+        <button (click)="onAddSnap()">Oh Snap!</button>
+        👌 {{ snaps }} : {{ message }}
+    </p>
     <p>{{ description }}</p>
 </div>

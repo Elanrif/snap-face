@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './face-snap.component.scss'
 })
 export class FaceSnapComponent implements OnInit{
+    count!: number ;
+    message!: string;
     title!: string;
     description!: string;
     createdAt!: Date;
@@ -15,6 +17,8 @@ export class FaceSnapComponent implements OnInit{
     imageUrl!: string;
 
     ngOnInit(): void {
+         this.count = 0;
+         this.message = '';
          this.title = 'Archibald';
          this.description = 'Mon meilleur ami depuis toujours !';
          this.createdAt = new Date()
@@ -23,4 +27,12 @@ export class FaceSnapComponent implements OnInit{
            'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg';
     }
 
+    onAddSnap() {
+      if(this.count < 1){
+      this.snaps++;
+      this.count++;
+    }else{
+      this.message = 'Oops un Snap!';
+    }
+  }
 }
