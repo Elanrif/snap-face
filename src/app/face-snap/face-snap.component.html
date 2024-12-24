@@ -3,8 +3,8 @@
     <p>Mis en ligne le {{ createdAt }}</p>
     <img [src]="imageUrl" [alt]="title"/>
     <p>
-        <button (click)="onAddSnap()">Oh Snap!</button>
-        👌 {{ snaps }} : {{ message }}
+        <button (click)="onAddSnap()">{{  snapButtonText }}</button>
+        👌 {{ snaps }}
     </p>
     <p>{{ description }}</p>
 </div>
