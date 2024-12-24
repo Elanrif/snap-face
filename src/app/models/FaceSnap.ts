@@ -1,8 +1,18 @@
 export class FaceSnap {
-    constructor(public title: string,
-                description: string, 
-                mageUrl:string,
-                createdDate: Date, 
-                snaps: number) {}
-    
+ 
+    constructor(
+    public title: string,
+    public description: string,
+    public imageUrl: string,
+    public createdAt: Date,
+    public snaps: number
+  ) {}
+
+  addSnap(): void {
+    this.snaps++;
+  }
+
+  removeSnap(): void {
+    this.snaps --;
+  }
 }
