@@ -9,7 +9,7 @@ import { FaceSnap } from '../models/FaceSnap';
   styleUrl: './face-snap.component.scss',
 })
 export class FaceSnapComponent{
-  @Input() faceSnaps!: FaceSnap[];
+  @Input() faceSnap!: FaceSnap;
 
   snapButtonText!: string;
   userHasSnapped = false;
@@ -17,7 +17,7 @@ export class FaceSnapComponent{
   ngOnInit(): void {
       this.snapButtonText = 'Oh Snap!';
   }
- /*  addSnap() {
+  addSnap() {
     if(this.userHasSnapped){
       this.unSnap();
       this.userHasSnapped = false;
@@ -25,8 +25,8 @@ export class FaceSnapComponent{
       this.snap();
       this.userHasSnapped = true;
     }
-  } */
-/*   unSnap() {
+  }
+  unSnap() {
     this.faceSnap.removeSnap();
     this.snapButtonText = 'Oh Snap!';
     this.userHasSnapped = false;
@@ -36,5 +36,5 @@ export class FaceSnapComponent{
     this.faceSnap.addSnap();
     this.snapButtonText = 'Oops, unSnap!';
     this.userHasSnapped = true;
-  } */
+  }
 }
