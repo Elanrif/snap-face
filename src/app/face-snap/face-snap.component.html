@@ -4,8 +4,8 @@
     <p>{{ faceSnap.description }}</p>
     <p>FaceSnap créee le {{ faceSnap.createdAt}}</p>
     <p>
-        <button (click)="addSnap()">{{  snapButtonText }}</button>
-        👌 {{ faceSnap.snaps }}
+        <button (click)="faceSnap.addSnap()">{{  snapButtonText }}</button>
+        <span [ngStyle]="{color: 'rgb(0, ' + faceSnap.snaps + ', 0)'}">👌 {{ faceSnap.snaps }}</span>
     </p>
     @if (faceSnap.location) {
         <p>Localisation: {{ faceSnap.location }}</p>
