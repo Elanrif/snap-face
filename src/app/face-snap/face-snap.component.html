@@ -2,7 +2,7 @@
     <h2>{{ faceSnap.title | uppercase }}</h2>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title"/>
     <p>{{ faceSnap.description }}</p>
-    <p>FaceSnap créee le {{ faceSnap.createdAt | date: 'longDate'}}</p>
+    <p>FaceSnap créee le {{ faceSnap.createdAt | date: 'd MMMM yyyy, à HH:mm'}}</p>
     <p>
         <button (click)="addSnap()">{{  snapButtonText }}</button>
         <span [ngStyle]="{color: 'rgb(0, ' + faceSnap.snaps + ', 0)'}">👌 {{ faceSnap.snaps }}</span>
