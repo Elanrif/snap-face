@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { FaceSnapComponent } from './face-snap/face-snap.component';
+import { FaceSnapListComponent } from "./face-snap-list/face-snap-list.component";
+import { HeaderComponent } from "./header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [FaceSnapComponent],
+  imports: [FaceSnapListComponent, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'snapface';
+export class AppComponent{
 }
