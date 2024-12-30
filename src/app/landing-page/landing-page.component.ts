@@ -12,7 +12,7 @@ export class LandingPageComponent implements OnInit{
   alt!: string;
 
   ngOnInit() {
-    this.snapFaceImg = '/snapface.png';
+    this.snapFaceImg = 'snapface.png';
     this.alt = 'Image doesn\'t exist' ;
   }
 }
