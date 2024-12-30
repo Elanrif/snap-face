@@ -9,6 +9,11 @@
     width: 100%;
     text-align: center;
 
+    a {
+      text-decoration: none;
+      font-size: 18px;
+    };
+
     a:hover {
         cursor: pointer;
         color: blue;
